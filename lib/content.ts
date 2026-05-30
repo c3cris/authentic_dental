@@ -89,15 +89,19 @@ export const ORTHO = [
 ];
 
 export const SERVICES = [
-  { title: "CAD/CAM Milling Center", icon: "precision_manufacturing", desc: "The most advanced milling center in Texas for crowns, bridges, bars, and custom abutments." },
-  { title: "Digital & Intraoral Scans", icon: "3d_rotation", desc: "We accept STL files from all intraoral scanners — TRIOS, CEREC, iTero, and more." },
-  { title: "Implant Case Planning", icon: "build", desc: "A team approach with diagnostic case plans, surgical guidance, and cost estimation." },
-  { title: "Custom Shade Service", icon: "palette", desc: "In-office and digital shade matching, including the patented Shade Wand technology." },
-  { title: "Pickup & Delivery", icon: "local_shipping", desc: "Reliable scheduled pickup, plus prepaid UPS shipping labels for out-of-area practices." },
-  { title: "One-on-One Technical Support", icon: "support_agent", desc: "Direct access to our technicians for parts compatibility, materials, and troubleshooting." },
-  { title: "Continuing Education", icon: "school", desc: "20–30 AGD PACE approved CE programs per year for you and your team." },
-  { title: "Fee Schedule & Lab Kits", icon: "request_quote", desc: "Request a current fee schedule or an introductory laboratory kit to get started." },
-  { title: "Remake Support", icon: "autorenew", desc: "Clinical guidance on impressions, occlusion, and shade to minimize remakes." },
+  { title: "Shade Appointments", icon: "palette", desc: "Custom shade consultations are usually performed at the laboratory in our special shade-taking room with all the necessary tools and lighting needed to achieve an accurate shade match. Shade selection at your office is by appointment and a fee is associated for this service." },
+  { title: "Digital Impressions", icon: "3d_rotation", desc: "The future is here today! We receive digital impressions and Rx's by email daily. This process reduces material costs, turn-around time, seating time, and virtually eliminates remakes. (Your choice: CerecConnect, Lava COS, Cadent, or E-4D)" },
+  { title: "Laser Welding", icon: "precision_manufacturing", desc: "Most laboratories solder weld their connections associated with implants or crown and bridge. Authentic Lab uses laser welding which is 260% stronger. This process eliminates alloy fatigue, distortion and inaccurate fits. Our laser welder achieves 100% accurate connections on any alloy." },
+  { title: "Registered Implant Laboratory", icon: "verified", desc: "This assures you that our highly trained staff has the formal education and knowledge to help you from diagnostic case planning to the final restoration." },
+  { title: "24-Hour Crown", icon: "schedule", desc: "When you need something now! We can deliver. Please call us for scheduling." },
+  { title: "Lifetime Warranty", icon: "workspace_premium", desc: "A company that stands behind its products, gives you piece of mind. Please call for details." },
+  { title: "Case Consulting and Clinical Guidelines", icon: "support_agent", desc: "Call us anytime. We are here to help you with case planning, preparation design, impression troubleshooting, etc. Anything to help in getting it right the first time." },
+  { title: "Full-Service", icon: "build", desc: "Working with a full-service laboratory has many advantages, especially when restoring combination cases." },
+  { title: "Performance Calls", icon: "call", desc: "This gives you the satisfaction of knowing that each month we will call your office and ask if we are meeting all of your needs." },
+  { title: "Newsletters & Updates", icon: "newspaper", desc: "We will keep you informed on all the latest technology available. This allows you to offer your patients the latest and greatest!" },
+  { title: "Sponsored Clinics", icon: "school", desc: "Authentic Lab is proud to be approved by the Academy of General Dentistry for providing continuing education. We provide more CE than any lab in Texas and 90% of our courses are no charge to our customers." },
+  { title: "Rush Service", icon: "bolt", desc: "Please preschedule any rush cases. Call us for additional fees." },
+  { title: "Warranty & Remake Policy", icon: "autorenew", desc: "Please call us for details on our Warranty & Remake Policies." },
 ];
 
 export const SEMINAR_TOPICS = [

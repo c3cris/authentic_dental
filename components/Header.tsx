@@ -10,16 +10,13 @@ function isActive(pathname: string, href: string) {
   return pathname.startsWith(href);
 }
 
-function Logo({ onWhite = false }: { onWhite?: boolean }) {
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
+function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-3 shrink-0">
-      <span className="grid place-items-center w-11 h-11 rounded bg-deep-navy">
-        <Icon name="dentistry" className="text-clinical-blue" fill />
-      </span>
-      <span className="leading-none">
-        <span className={`block font-head font-extrabold text-[19px] tracking-tight ${onWhite ? "text-white" : "text-deep-navy"}`}>AUTHENTIC</span>
-        <span className="block text-[10px] font-bold tracking-[0.28em] text-on-surface-variant uppercase">Dental Laboratory</span>
-      </span>
+    <Link href="/" className="shrink-0">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={`${BASE}/logo.png`} alt="Authentic Dental Laboratory" width={150} className="h-auto" />
     </Link>
   );
 }

@@ -35,6 +35,8 @@ jobs:
 
       - name: Build
         run: pnpm run build
+        env:
+          IS_GH_PAGES: true
 
       - uses: actions/configure-pages@v5
 

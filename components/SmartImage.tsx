@@ -1,7 +1,12 @@
 "use client";
 import { useState } from "react";
 
-// Plain <img> with a graceful labeled placeholder if the remote asset fails.
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
+function resolvedSrc(src: string) {
+  return src.startsWith('/') ? `${BASE}${src}` : src;
+}
+
 export function SmartImage({ src, alt, className = "", style }: { src: string; alt: string; className?: string; style?: React.CSSProperties }) {
   const [failed, setFailed] = useState(false);
   if (failed) {
@@ -15,5 +20,5 @@ export function SmartImage({ src, alt, className = "", style }: { src: string; a
     );
   }
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src={src} alt={alt} loading="lazy" className={className} style={style} onError={() => setFailed(true)} />;
+  return <img src={resolvedSrc(src)} alt={alt} loading="lazy" className={className} style={style} onError={() => setFailed(true)} />;
 }

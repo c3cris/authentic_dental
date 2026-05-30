@@ -12,21 +12,17 @@ export default function ServicesPage() {
     <>
       <PageBanner title="Services" crumb="What We Offer" />
       <section className="max-w-container mx-auto px-gutter py-16">
-        <div className="max-w-2xl mb-10">
+        <div className="max-w-3xl mb-12">
           <Eyebrow>Operatory Products &amp; Support</Eyebrow>
           <h2 className="font-head font-bold text-deep-navy text-[32px] leading-tight tracking-tight mb-4">Your dental resource, end to end.</h2>
           <p className="text-[17px] leading-relaxed text-on-surface-variant">Our goal is to be dedicated to your practice by becoming your dental resource &mdash; providing guidance and knowledge on the latest techniques, materials, case planning, and procedures available today.</p>
         </div>
-        <div className="divide-y divide-outline-variant/50">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map((s) => (
-            <div key={s.title} className="flex gap-5 py-6">
-              <span className="shrink-0 grid place-items-center w-10 h-10 rounded-full bg-clinical-blue/10 mt-0.5">
-                <Icon name={s.icon} className="text-clinical-blue text-[20px]" />
-              </span>
-              <div>
-                <h3 className="font-head font-bold text-deep-navy text-[17px] mb-1">{s.title}</h3>
-                <p className="text-[15px] leading-relaxed text-on-surface-variant">{s.desc}</p>
-              </div>
+            <div key={s.title} className="bg-surface-container-lowest rounded border border-outline-variant/60 p-7 shadow-card hover:shadow-float transition-shadow duration-300">
+              <span className="grid place-items-center w-12 h-12 rounded bg-clinical-blue/10 mb-4"><Icon name={s.icon} className="text-clinical-blue" /></span>
+              <h3 className="font-head font-bold text-deep-navy text-[18px] mb-2">{s.title}</h3>
+              <p className="text-[15px] leading-relaxed text-on-surface-variant">{s.desc}</p>
             </div>
           ))}
         </div>
